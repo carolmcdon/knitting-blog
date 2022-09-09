@@ -1,38 +1,153 @@
-.App {
+#Logo {
+  font-family: 'Beth Ellen', cursive;
+  color: rgb(212, 39, 39);
+  font-size: 40px;
+  padding-left: 30px;
+  padding-top: 28px;
+}
+
+#navBarContainer {
+  display: flex;
+  flex-wrap: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  height: 110px;
+  background-color: rgb(228, 160, 182);
+  padding-bottom: 40px;
+}
+
+.navBar {
+  padding-top: 50px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* body {
+  background-size: 40px 40px;
+  background-color: rgb(228, 160, 182);
+  background-image:
+    linear-gradient(to right, rgb(241, 236, 227) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(241, 236, 227) 1px, transparent 1px);
+} */
+
+#homeImg {
+  width: 1930px;
+  height: 800px;
+  object-fit: cover;
+  object-position: 70% 30%;
+  border-style: solid;
+  border-bottom-width: 50px;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-color: rgb(246, 196, 88);
+}
+
+.homeContainer {
+  position: relative;
   text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.textOverImage {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  font-size: 30px;
+  position: absolute;
+  top: 243px;
+  left: 135px;
+  background-color: rgb(228, 160, 182);
+  border-style: solid;
+  border-color: rgb(228, 160, 182);
+  border-left-width: 10px;
+  border-right-width: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.myProfile {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.userPostTitle {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.userPostImg1 {
+  max-width: 70px;
+}
+
+.postsOnHome{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  font-size: 15px;
+  align-items: center;
+  /* background-color: rgb(244, 189, 52); */
+}
+
+.postImgHome {
+  width: 200px;
+  padding: 10px;
+}
+
+.postCard {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.loginContainer {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.postsOnHome {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.postTextContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+  align-content: flex-start;
+  gap: 20px;
+}
+
+.search {
+  padding:20px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  font-size: 15px;
+  display: flex;
+  align-content: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.blueContainer {
+  border-style: solid;
+  border-width: 12px;
+  background-color: rgb(14, 210, 221);
+  border-color: rgb(14, 210, 221);
 }
