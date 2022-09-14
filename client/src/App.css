@@ -1,3 +1,5 @@
+/* Home Page */
+
 #Logo {
   font-family: 'Beth Ellen', cursive;
   color: rgb(212, 39, 39);
@@ -15,44 +17,47 @@
   height: 110px;
   background-color: rgb(228, 160, 182);
   padding-bottom: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index:300;
+  box-shadow: 0 4px 100px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .navBar {
-  padding-top: 50px;
+  padding-top: 40px;
   font-family: 'Roboto Mono', monospace;
   font-weight: 500;
   font-size: 20px;
 }
 
-/* body {
-  background-size: 40px 40px;
-  background-color: rgb(228, 160, 182);
-  background-image:
-    linear-gradient(to right, rgb(241, 236, 227) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(241, 236, 227) 1px, transparent 1px);
-} */
-
 #homeImg {
   width: 1930px;
   height: 800px;
+  top: 140px;
+  position: relative;
   object-fit: cover;
   object-position: 70% 30%;
   border-style: solid;
-  border-bottom-width: 50px;
-  border-top-width: 0px;
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-color: rgb(246, 196, 88);
+  border-bottom-width: 20px;
+  border-color:  rgb(228, 160, 182);
 }
 
 .homeContainer {
-  position: relative;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
 }
 
-.textOverImage {
+.footer {
+  height: 100px;
+  background-color: rgb(228, 160, 182);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index:300;
+}
+
+/* .textOverImage {
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   font-size: 30px;
@@ -64,16 +69,213 @@
   border-color: rgb(228, 160, 182);
   border-left-width: 10px;
   border-right-width: 10px;
+} */
+
+/* Posts On Home Page */
+
+.postsOnHome{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-content: left;
+  background-color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  font-size: 15px;
+  /* border-style: solid;
+  border-right-width: 30px;
+  border-left-width: 30px;
+  border-top-width: 40px;
+  border-bottom-width: 0px;
+  border-color: rgb(228, 160, 182); */
+  padding-left: 10px;
+  padding-right: 25px;
+  gap: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.myProfile {
+.postImgHome {
+  width: 150px;
+  padding: 20px;
+}
+
+.aboutPostHomeContainer {
+  display: flex;
+  flex-direction: row;
+  align-content:left;
+  text-align: left;
+}
+
+.postTextContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-start;
+  padding-top:20px;
+  gap: 15px;
+}
+
+.textHomeContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px;
+  justify-content: flex-start;
+}
+
+.postUsername {
+  font-family: 'Beth Ellen', cursive;
+  color: black;
+  font-size: 15px;
+}
+
+/* Login Page */
+
+.loginPage {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   font-size: 15px;
+  top: 60px;
+}
+
+.loginSituation {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 350px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.loginContainer {
+  align-items: center;
+  align-content: center;
+}
+
+#loginImg {
+  filter: hue-rotate(340deg);
+}
+
+.signUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 10px;
+}
+
+.logout {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.loginFromSignUp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Search */
+
+.search {
+  padding:10px;
+  top: -160px;
+  position: relative;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  font-size: 30px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  /* border-color: white;
+  border-width: 5px;
+  border-style: solid; */
+}
+
+/* My Patterns Page */
+
+.eachUserPost {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 10px;
+  justify-content: flex-start;
+  border-bottom-width: 1.5px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: black;
+  border-style: solid;
+}
+
+.myPatternsTitle {
+  background-color: white;
+  width: 150px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white;
+  font-family: 'Beth Ellen', cursive;
+  color: black;
+  font-size: 10px;
+  text-align: center;
+}
+
+.newPatternTitle {
+  background-color: white;
+  width: 150px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-color: white;
+  border-width: 5px;
+  border-style: solid;
+  font-family: 'Beth Ellen', cursive;
+  color: black;
+  font-size: 10px;
+  text-align: center;
+}
+
+.myProfile {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.contentMyProfile {
+  top: 100px;
+  position: relative;
+}
+
+.myPatterns {
+  width: 838.48px;
+  height: 500px;
+  background-color: white;
+  overflow-y:scroll;
+  scroll-behavior: smooth;
+  box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.newPattern {
+  box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .form {
@@ -87,67 +289,136 @@
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   font-size: 20px;
+  padding: 10px;
 }
+
 
 .userPostImg1 {
   max-width: 70px;
 }
 
-.postsOnHome{
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 400;
-  font-size: 15px;
-  align-items: center;
-  /* background-color: rgb(244, 189, 52); */
+.tabs {
+  display: flex;
+  flex-direction: row;
 }
 
-.postImgHome {
-  width: 200px;
-  padding: 10px;
+.submitBtnMyPosts {
+  width: 840px;
 }
+
+/* PostCard */
 
 .postCard {
+  position: relative;
+  top: 150px;
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   font-size: 15px;
+  padding-left: 150px;
+  padding-right: 150px;
+  background-image: url("https://images.unsplash.com/photo-1601662528567-526cd06f6582?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80");
 }
 
-.loginContainer {
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 400;
-  font-size: 15px;
-}
-
-.postsOnHome {
+.everythingButComments {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-content: center;
-}
-
-.postTextContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: baseline;
-  align-content: flex-start;
-  gap: 20px;
-}
-
-.search {
-  padding:20px;
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 400;
-  font-size: 15px;
-  display: flex;
-  align-content: center;
   align-items: center;
-  justify-content: center;
+  align-content: center;
+  justify-content: flex-start;
+  gap: 50px;
+
 }
 
-.blueContainer {
+.postCardHeader {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: baseline;
+  align-content: left;
+  gap: 15px;
+}
+
+.polaroidContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.postCardImg {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 90px;
+  object-fit: cover;
+}
+
+.postCardUsername {
+  font-family: 'Beth Ellen', cursive;
+  color: black;
+  font-size: 15px;
+}
+
+.postInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+/* Comments */
+
+.allComments {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
   border-style: solid;
-  border-width: 12px;
-  background-color: rgb(14, 210, 221);
-  border-color: rgb(14, 210, 221);
+  border-top-width: 0px;
+  border-bottom-width: 2px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: black;
+}
+
+.commentHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  text-align: left;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.commentForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.postCardFooter {
+  position: relative;
+  top: 150px;
+  height: 100px;
+  width: 2000px;
+  background-color: rgb(228, 160, 182);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index:300;
 }

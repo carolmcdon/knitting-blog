@@ -50,14 +50,21 @@ export default function Home({receivePostObj}) {
               receivePostObj(postObj)}
               }className="postsOnHome">
               <img className="postImgHome" src={postObj.post_image1}/>
-                <div className="postTextContainer">
-                  <h1 className="postTitleHome">{postObj.post_title}</h1>
-                  <p className="postDateHome">{postObj.post_date}</p>
-                  <p className="postUserHome">{postObj.user.username}</p>
+                <div className="textHomeContainer">
+                  <div className="postTextContainer">
+                    <h1>{postObj.post_title}</h1>
+                    <p>{postObj.post_date}</p>
+                    <p className="postUsername">{postObj.user.username}</p>
+                  </div>
+                  <div className="aboutPostHomeContainer"> 
+                      <p className="aboutPostHome">{postObj.about_post}</p>
+                  </div>
                 </div>
             </div>
           )
         })}
+        </div>
+        <div className="footer">
         </div>
     </div>
   )

@@ -12,7 +12,7 @@ export default function NavBar({currentUser}) {
   return (
     <>
       <div id="navBarContainer">
-      <h1 id="Logo">Knitting Neighbors</h1>
+      <h1 id="Logo">let's knit it</h1>
         <div className="navBar">
           <NavLink
             to="/home"

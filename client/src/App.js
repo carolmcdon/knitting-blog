@@ -13,6 +13,7 @@ export default function App() {
   const [posts, setPosts] = useState([])
   const [currentPostObj, setCurrentPostObj] = useState("")
   const [currentHomePostObj, setCurrentHomePostObj] = useState("")
+  const [currentPostComments, setCurrentPostComments] = useState([])
   
   useEffect(() => {
     fetch("/posts")
@@ -67,11 +68,15 @@ export default function App() {
 
   function receivePostObj(postObj){
      setCurrentPostObj(postObj)
+     receivePostObjId(postObj)
   }
 
-  // function receiveHomePostObj(postObj){
-  //   setCurrentHomePostObj(postObj)
-  // }
+  function receivePostObjId(postObj) {
+      fetch(`/show_comments_for_post/${postObj.id}`)
+      .then(res=>res.json())
+      .then(currentPostComments=>setCurrentPostComments(currentPostComments))
+    console.log("currentPostComments", currentPostComments)
+  }
 
   return (
     <div>
@@ -87,7 +92,7 @@ export default function App() {
           <MyPosts receivePostObj={receivePostObj} setPosts={setPosts} posts={posts} currentUser={currentUser}/>
         </Route>
         <Route path="/posts/">
-          <PostCard currentPostObj={currentPostObj} posts={posts} currentUser={currentUser}/>
+          <PostCard setCurrentPostComments={setCurrentPostComments} currentPostComments={currentPostComments} setPosts={setPosts} posts={posts} currentPostObj={currentPostObj} currentUser={currentUser}/>
         </Route>
       </Switch>
     </div>
